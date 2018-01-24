@@ -1,4 +1,4 @@
-package com.rroggia.flyweight;
+package com.rroggia.flyweight.implementation;
 
 import java.util.HashMap;
 import java.util.Map;

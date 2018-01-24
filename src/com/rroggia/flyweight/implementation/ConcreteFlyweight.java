@@ -1,4 +1,4 @@
-package com.rroggia.flyweight;
+package com.rroggia.flyweight.implementation;
 
 public class ConcreteFlyweight implements Flyweight {
 

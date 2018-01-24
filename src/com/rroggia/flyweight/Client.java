@@ -1,7 +1,7 @@
-package com.rroggia.flyweight.client;
+package com.rroggia.flyweight;
 
-import com.rroggia.flyweight.Flyweight;
-import com.rroggia.flyweight.FlyweightFactory;
+import com.rroggia.flyweight.implementation.Flyweight;
+import com.rroggia.flyweight.implementation.FlyweightFactory;
 
 public class Client {
 	public static void main(String[] args) {
