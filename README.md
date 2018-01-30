@@ -5,6 +5,23 @@ Design Patterns implementation
 
 ### Builder
 
+
+
+Example:
+```` java
+Builder builder = new ConcreteBuilder();
+Director director = new Director(builder);
+director.constructPartOne("One");
+director.constructPartTwo("Two");
+Product product = builder.getProduct();
+System.out.println(product);
+````
+Output:
+```` console
+Product [partOne=One, partTwo=Two]
+````
+
+
 ## Structural Pattern
 
 ### FlyWeight
