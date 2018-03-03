@@ -16,7 +16,7 @@ public class ConcreteBuilder implements Builder {
 		return this;
 	}
 
-	public Product getResult() {
+	public Product getProduct() {
 		return product;
 	}
 
