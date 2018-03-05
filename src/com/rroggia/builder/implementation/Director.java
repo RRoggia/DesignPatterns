@@ -1,6 +1,4 @@
-package com.rroggia.builder;
-
-import com.rroggia.builder.implementation.Builder;
+package com.rroggia.builder.implementation;
 
 public class Director {
 	private Builder builder;

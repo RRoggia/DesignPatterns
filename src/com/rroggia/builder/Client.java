@@ -2,6 +2,7 @@ package com.rroggia.builder;
 
 import com.rroggia.builder.implementation.Builder;
 import com.rroggia.builder.implementation.ConcreteBuilder;
+import com.rroggia.builder.implementation.Director;
 import com.rroggia.builder.implementation.Product;
 
 public class Client {
