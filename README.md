@@ -1,5 +1,11 @@
 # DesignPatterns
-Design Patterns implementation
+Design Patterns implementation in java
+
+1. [Creational Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#creational-pattern)
+2. [Structural Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#structural-pattern)
+3. [Behavioral Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#behavioral-pattern)
+
+
 
 ## Creational Pattern
 
@@ -112,3 +118,5 @@ The refined Abstraction do more things
 primitive Operation One - Concrete Implementation B.
 primitive Operation Two - Concrete Implementation B.
 ````
+
+## Behavioral pattern
