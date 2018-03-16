@@ -89,3 +89,26 @@ Hello Darkness my old friend.
     * overwriting the Abstraction methods
 
 [Bridge Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/bridge)
+
+Example:
+````java
+		Abstraction abstraction = new Abstraction(1);
+		abstraction.operation();
+
+		Abstraction abstraction2 = new Abstraction(100);
+		abstraction2.operation();
+		
+		Abstraction abstraction3 = new RefinedAbstraction(10);
+		abstraction3.operation();		
+````
+
+Output:
+````console
+primitive Operation One - Concrete Implementation A.
+primitive Operation Two - Concrete Implementation A.
+primitive Operation One - Concrete Implementation B.
+primitive Operation Two - Concrete Implementation B.
+The refined Abstraction do more things
+primitive Operation One - Concrete Implementation B.
+primitive Operation Two - Concrete Implementation B.
+````
