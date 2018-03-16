@@ -7,14 +7,18 @@ Design Patterns implementation
 `TODO`
 
 ### Builder
+* Ease the construction of complex objects
+* Good for cases where `Product` can have lots of optionals parameters, the `Builder` makes the API flexible by allowing only to add the required fields
+
+[Builder Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/builder)
 
 Example:
 ```` java
 Builder builder = new ConcreteBuilder();
 Director director = new Director(builder);
-director.constructPartOne("One");
-director.constructPartTwo("Two");
+director.construct();
 Product product = builder.getProduct();
+
 System.out.println(product);
 ````
 Output:
@@ -28,6 +32,11 @@ Product [partOne=One, partTwo=Two]
 `TODO`
 
 ### Singleton
+* Ensure the `Singleton` class has only one instance
+* The `Singleton` itself is responsible for the management of the its instances
+* A variation of this pattern, is to have a registry of singletons where subclasses register theirself to the `Singleton`, and the instance to be created is defined in runtime, for example, by a enviroment parameter
+
+[Singleton Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/singleton)
 
 Example:
 ````java
@@ -52,8 +61,6 @@ Is the instance the same? true
 Data: Same Data
 ````
 
-[Singleton Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/singleton)
-
 ## Structural Pattern
 
 ### FlyWeight
@@ -75,8 +82,8 @@ Hello Darkness my old friend.
 ````
 
 ### Bridge
-* The `Client` class will consume the `Abstraction` class, which is responsible for define the interface.
-* The `Abstraction` class "delegates" the processing to a one of the `ConcreteImplementator` that implements the `Implementor` interface.
+* The `Client` class will consume the `Abstraction` class, which is responsible for define the interface
+* The `Abstraction` class "delegates" the processing to a one of the `ConcreteImplementator` that implements the `Implementor` interface
 * The `RefinedAbstraction` (Subclass) can enhance the existing interface by:
     * adding new methods in the subclass  (need to use the SubClass instance instead of Superclass instance) 
     * overwriting the Abstraction methods
