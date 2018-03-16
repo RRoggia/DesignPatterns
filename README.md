@@ -3,9 +3,10 @@ Design Patterns implementation
 
 ## Creational Pattern
 
+### Abstract Factory
+`TODO`
+
 ### Builder
-
-
 
 Example:
 ```` java
@@ -20,7 +21,38 @@ Output:
 ```` console
 Product [partOne=One, partTwo=Two]
 ````
+### Factory Method
+`TODO`
 
+### Prototype
+`TODO`
+
+### Singleton
+
+Example:
+````java
+System.out.print("Get Instance 1st time: ");
+System.out.println(Singleton.getInstance());
+
+System.out.print("Get Instance 2nd time: ");
+System.out.println(Singleton.getInstance());
+
+System.out.print("Is the instance the same? ");
+System.out.println(Singleton.getInstance() == Singleton.getInstance());
+
+System.out.print("Data: ");
+System.out.println(Singleton.getInstance().getData());
+````
+
+Output:
+```` console
+Get Instance 1st time: com.rroggia.singleton.implementation.Singleton@7852e922
+Get Instance 2nd time: com.rroggia.singleton.implementation.Singleton@7852e922
+Is the instance the same? true
+Data: Same Data
+````
+
+[Singleton Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/singleton)
 
 ## Structural Pattern
 
