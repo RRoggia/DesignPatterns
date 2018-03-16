@@ -1,14 +1,14 @@
 # DesignPatterns
 Design Patterns implementation in java
 
-1. [Creational Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#creational-pattern)
+#### 1. [Creational Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#creational-pattern)
 * [Abstract Factory](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#abstract-factory)
 * [Builder](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#builder)
 * [Factory Method](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#factory-method)
 * [Prototype](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#prototype)
 * [Singleton](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#singleton)
-2. [Structural Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#structural-pattern)
-3. [Behavioral Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#behavioral-pattern)
+#### 2. [Structural Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#structural-pattern)
+#### 3. [Behavioral Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#behavioral-pattern)
 
 
 
@@ -103,14 +103,14 @@ Hello Darkness my old friend.
 
 Example:
 ````java
-		Abstraction abstraction = new Abstraction(1);
-		abstraction.operation();
+Abstraction abstraction = new Abstraction(1);
+abstraction.operation();
 
-		Abstraction abstraction2 = new Abstraction(100);
-		abstraction2.operation();
+Abstraction abstraction2 = new Abstraction(100);
+abstraction2.operation();
 		
-		Abstraction abstraction3 = new RefinedAbstraction(10);
-		abstraction3.operation();		
+Abstraction abstraction3 = new RefinedAbstraction(10);
+abstraction3.operation();		
 ````
 
 Output:
