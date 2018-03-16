@@ -2,11 +2,11 @@
 Design Patterns implementation in java
 
 1. [Creational Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#creational-pattern)
-1.1 [Abstract Factory](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#abstract-factory)
-1.2 [Builder](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#builder)
-1.3 [Factory Method](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#factory-method)
-1.4 [Prototype](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#prototype)
-1.5 [Singleton](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#singleton)
+* [Abstract Factory](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#abstract-factory)
+* [Builder](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#builder)
+* [Factory Method](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#factory-method)
+* [Prototype](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#prototype)
+* [Singleton](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#singleton)
 2. [Structural Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#structural-pattern)
 3. [Behavioral Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#behavioral-pattern)
 
