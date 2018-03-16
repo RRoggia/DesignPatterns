@@ -11,8 +11,7 @@ public class Client {
 
 		Builder builder = new ConcreteBuilder();
 		Director director = new Director(builder);
-		director.constructPartOne("One");
-		director.constructPartTwo("Two");
+		director.construct();
 		Product product = builder.getProduct();
 
 		System.out.println(product);

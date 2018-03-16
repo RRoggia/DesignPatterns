@@ -7,6 +7,11 @@ public class Director {
 		this.builder = builder;
 	}
 
+	public void construct() {
+		constructPartOne("One");
+		constructPartTwo("Two");
+	}
+
 	public void constructPartOne(String partOne) {
 		builder.addPartOne(partOne);
 	}
