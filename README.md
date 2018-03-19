@@ -108,6 +108,7 @@ Data: Same Data
 ## Structural Pattern
 
 ### Adapter
+`TODO`
 
 ### Bridge
 * The `Client` class will consume the `Abstraction` class, which is responsible for define the interface
@@ -142,10 +143,13 @@ primitive Operation Two - Concrete Implementation B.
 ````
 
 ### Composite  
+`TODO`
 
 ### Decorator 
+`TODO`
 
 ### Façade
+`TODO`
 
 ### FlyWeight
 * Intrinsic State: Represents what is in common between the flyweight objects. It's stored in the `ConcreteFlyweight` class. E.g. Characters
@@ -166,28 +170,39 @@ Hello Darkness my old friend.
 ````
 
 ### Proxy
+`TODO`
 
 ## Behavioral pattern
 
 ### Chain of Responsibility
+`TODO`
 
 ### Command
+`TODO`
 
 ### Interpreter
+`TODO`
 
 ### Iterator
+`TODO`
 
 ### Mediator
+`TODO`
 
 ### Memento
+`TODO`
 
 ### Observer
+`TODO`
 
 ### State
+`TODO`
 
 ### Strategy
+`TODO`
 
 ### Template Method
+`TODO`
 
 ### Visitor
-
+`TODO`
