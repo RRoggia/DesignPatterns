@@ -9,8 +9,17 @@ Design Patterns implementation in java
 * [Singleton](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#singleton)
 #### 2. [Structural Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#structural-pattern)
 #### 3. [Behavioral Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#behavioral-pattern)
-
-
+* [Chain of Responsibility](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#chain-of-responsibility)
+* [Command](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#command)
+* [Interpreter](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#interpreter)
+* [Iterator](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#iterator)
+* [Mediator](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#mediator)
+* [Memento](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#memento)
+* [Observer](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#observer)
+* [State](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#state)
+* [Strategy](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#strategy)
+* [Template Method](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#template-method)
+* [Visitor](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#visitor)
 
 ## Creational Pattern
 
