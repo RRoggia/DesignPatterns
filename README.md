@@ -37,7 +37,24 @@ Output:
 Product [partOne=One, partTwo=Two]
 ````
 ### Factory Method
-`TODO`
+* Decouple the construction of the object of its implementation. 
+* The `Creator` provides a hook method to its subclasses implement and decide the `Product` implementation.
+* The `Creator.anOperation()` does not know about the `Product` implementations, only the interface.
+* The `Product` interface determines the interface the `Creator` will have to work with.
+* The `ConcreteCreator` makes the connection between the `Creator` and the `ConcreteProduct` implementation.
+ 
+[Factory Method Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/factoryMethod)
+
+Example:
+```` java
+Creator creator = new ConcreteCreator();
+creator.anOperation();
+````
+Output:
+```` console
+ConcreteProduct operation 1.
+ConcreteProduct operation 2.
+````
 
 ### Prototype
 `TODO`
