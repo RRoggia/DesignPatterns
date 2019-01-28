@@ -108,7 +108,12 @@ Data: Same Data
 ## Structural Pattern
 
 ### Adapter
-`TODO`
+* There is two default ways of implementing it: 
+    * The adapter class extends the target abstract class and implements the source interface
+    * The adapter class is composed by the source interface and implements the target interface
+* The adapter class can also implement behaviours the source interface doesn't have
+
+`[IN PROGRESS]`
 
 ### Bridge
 * The `Client` class will consume the `Abstraction` class, which is responsible for define the interface
