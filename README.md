@@ -109,9 +109,9 @@ Data: Same Data
 
 ### Adapter
 * There is two default ways of implementing it: 
-    * The adapter class extends the target abstract class and implements the source interface
-    * The adapter class is composed by the source interface and implements the target interface
-* The adapter class can also implement behaviours the source interface doesn't have
+    * The `Adapter` class extends the `Target` abstract class and implements the `Adaptee` interface
+    * The `Adapter` class is composed by the `Adaptee` interface and implements the `Target` interface
+* The adapter class can also implement behaviours the `Adaptee` interface doesn't support
 
 `[IN PROGRESS]`
 
