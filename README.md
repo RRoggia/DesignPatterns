@@ -109,8 +109,8 @@ Data: Same Data
 
 ### Adapter
 * There is two default ways of implementing it: 
-    * The `AdapterInheritance` class extends the `Target` abstract class and implements the `Adaptee` interface
-    * The `AdapterComposition` class is composed by the `Adaptee` interface and implements the `Target` interface
+    * The `AdapterInheritance` class implements the `Target`interface and extends the `Adaptee` interface
+    * The `AdapterComposition` class is composed by the `Adaptee` and implements the `Target` interface
 * The adapter class can also implement behaviours the `Adaptee` interface doesn't support
 
 **AdapterInheritance**
@@ -121,6 +121,8 @@ Data: Same Data
 **AdapterComposition**
 * Works with all the subclasses of `Adaptee`, for example, you can use the `setAdaptee` method to change `Adaptee` implementation.
 * You only exposes the `Target` interface.
+
+[Adapter Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/adapter)
 
 Example:
 ````java
