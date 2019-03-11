@@ -109,11 +109,52 @@ Data: Same Data
 
 ### Adapter
 * There is two default ways of implementing it: 
-    * The `Adapter` class extends the `Target` abstract class and implements the `Adaptee` interface
-    * The `Adapter` class is composed by the `Adaptee` interface and implements the `Target` interface
+    * The `AdapterInheritance` class extends the `Target` abstract class and implements the `Adaptee` interface
+    * The `AdapterComposition` class is composed by the `Adaptee` interface and implements the `Target` interface
 * The adapter class can also implement behaviours the `Adaptee` interface doesn't support
 
-`[IN PROGRESS]`
+**AdapterInheritance**
+* Easily change the behaviour of the adaptee, by re-implementing the `Adaptee` methods (Line 13 - making the `parameter` uppercase).
+* The `AdapterInheritance` will not work with the `Adaptee` subclasses.
+* You exposes both the `Target` and the `Adaptee` methods.
+
+**AdapterComposition**
+* Works with all the subclasses of `Adaptee`, for example, you can use the `setAdaptee` method to change `Adaptee` implementation.
+* You only exposes the `Target` interface.
+
+Example:
+````java
+	public static void main(String[] args) {
+		System.out.println("AdapterComposition");
+		Target apiExposedToClient = new AdapterComposition();
+		apiExposedToClient.request();
+
+		System.out.println();
+		System.out.println("AdapterInheritance");
+		AdapterInheritance adaptee = new AdapterInheritance();
+		adaptee.specificRequest("AdapterInheritance (Subclass)");
+		request(adaptee);
+
+		apiExposedToClient = adaptee;
+		apiExposedToClient.request();
+
+	}
+
+	public static void request(Adaptee adaptee) {
+		adaptee.specificRequest("Adaptee (Superclass)");
+	}
+````
+
+Output:
+````console
+AdapterComposition
+Adaptee.specificRequest() implementation called from Target (Interface)
+
+AdapterInheritance
+Adaptee.specificRequest() implementation called from AdapterInheritance (Subclass)
+Adaptee.specificRequest() implementation called from Adaptee (Superclass)
+Adaptee.specificRequest() implementation called from Target (Interface)
+````
 
 ### Bridge
 * The `Client` class will consume the `Abstraction` class, which is responsible for define the interface
