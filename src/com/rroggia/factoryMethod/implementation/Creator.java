@@ -4,7 +4,7 @@ public abstract class Creator {
 
 	private Product product = createProduct();
 
-	public abstract Product createProduct();
+	protected abstract Product createProduct();
 
 	public void anOperation() {
 		product.operation1();

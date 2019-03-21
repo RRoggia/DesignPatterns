@@ -12,7 +12,7 @@ Design Patterns implementation in java
 * [Bridge](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#bridge)
 * [Composite](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#composite)
 * [Decorator](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#decorator)
-* [Façade](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#façade)
+* [Facade](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#facade)
 * [Flyweight](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#flyweight)
 * [Proxy](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#proxy)
 #### 3. [Behavioral Pattern](https://github.com/RRoggia/DesignPatterns/blob/master/README.md#behavioral-pattern)
@@ -196,7 +196,7 @@ primitive Operation Two - Concrete Implementation B.
 ### Decorator 
 `TODO`
 
-### Façade
+### Facade
 `TODO`
 
 ### FlyWeight
