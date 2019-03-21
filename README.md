@@ -241,9 +241,45 @@ Hello Darkness my old friend.
 `TODO`
 
 ### Observer
+* Whenever you have to establish an 1:n communication you can consider this pattern
+* The `Subject` is an abstract class responsible to handling the `ConcreteSubject`'s `Observer`s through the `attach()` and `detach()` methods
+* The `Subject` also specifies a `notifyObservers` method, used to notify all the `Observer`s attached to the `ConcreteSubject`
+* The `ConcreteSubject` holds the state of the data, once the data changes either itself can notify the `Observer`s or it can provide a method to a client class do the notification
+  * If the `ConcreteSubject` holds several states, it can trigger several times the notify, which can be inefficient
+  * If a client class is responsible for the notification, it can notify only once after all the states were updated. However, there is the possibility of the client class forget to call the notify. 
+* The `Observer` provides an interface, `update()` used to notify each `ConcreteObserver`
+  * Push model: The method provides through its interface the state changed in the `ConcreteSubject`, `update(stateChanged)`, it assumes all `ConcreteObserver` are interested in this information, which may not be true 
+  * Pull model: The method solely notifies the `ConcreteSubject`, and the `ConcreteSubject` has to call the `ConcreteSubject` to fetch the changes 
 
+[Observer Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/observer)
 
-`In Progress`
+Client:
+
+````java
+	ConcreteSubject subject = new ConcreteSubject();
+	ConcreteObserver observerOne = new ConcreteObserver(subject);
+	AnotherConcreteObserver observerTwo = new AnotherConcreteObserver(subject);
+
+	observerOne.showState();
+	observerTwo.showState();
+
+	subject.setState("Invalid");
+
+	observerOne.showState();
+	observerTwo.showState();
+````
+Output:
+
+````
+ConcreteObserver state is : Valid
+AnotherConcreteObserver state is : Valid
+
+change subject's state from 'Valid' to 'Invalid'
+
+ConcreteObserver state is : Invalid
+AnotherConcreteObserver state is : Invalid
+
+````
 
 ### State
 `TODO`
