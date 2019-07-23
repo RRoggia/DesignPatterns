@@ -206,7 +206,25 @@ primitive Operation Two - Concrete Implementation B.
 `TODO`
 
 ### Facade
-`TODO`
+* Provides an unique and simplified interface to several resources of a subsystem. 
+* It can provide an default behavior, making it better to most of the clients that can use the default implementation. For more specific scenarios, client application can still access the subsystem classes.
+* Decouples client application and subsystems classes. Because, the facade is the entry point of the subsystem, it isolates the client code from the subsystem classes. Loose couple and less classes to the client application to know about, making it easier to use.
+* The `Facade` delegates the work to the subsystem classes. It might be required some mapping between the `Facade `interface and the subsystems classes. 
+
+[Facade Implementation]()
+
+Example: 
+
+````java
+	new Facade().doSomething(4);
+````
+
+Output:
+
+````console
+	SubsystemClassA value is 8
+	Subsystem class b value is 4.0
+````
 
 ### FlyWeight
 * Intrinsic State: Represents what is in common between the flyweight objects. It's stored in the `ConcreteFlyweight` class. E.g. Characters
