@@ -314,7 +314,43 @@ AnotherConcreteObserver state is : Invalid
 `TODO`
 
 ### Strategy
-`TODO`
+* Enables the `Client` class to choose between the `Strategy` implementations. To choose the behavior the `Client` has to to inject a `ConcreteStrategy` to the `Context`.
+* There are two options to send `Context` data to the  `Strategy` implementations:
+1. The `Strategy` interface receives the whole `Context` and the `ConcreteStrategy` it's responsible for getting the required data. It creates a coupling between the `Context` and `ConcreteStrategy`.
+2. The `Strategy` interface receives only the arguments it requires. It might be necessary to have a generic interface, meaning that eventually a `ConcreteStrategy` might not use all the arguments.
+
+
+[]()
+
+Changing Implementation Example: 
+
+````java
+Context context = new Context(new ConcreteStrategyA());
+System.out.println(context.toUpperCase());
+
+context = new Context(new ConcreteStrategyB());
+System.out.println(context.toUpperCase());
+
+````
+
+Output:
+
+````java
+ANOTHER STRING
+ANOTHER STRING
+````
+
+Examples of Context and Strategy Interfaces: 
+
+````java
+public interface Strategy {
+	//sending whole context
+	String toUpperCase(Context context);
+	//sending only arguments
+	String toUpperCase(String string);
+}
+
+````
 
 ### Template Method
 `TODO`
