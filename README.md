@@ -40,6 +40,7 @@ Design Patterns implementation in java
 [Builder Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/builder)
 
 Example:
+
 ```` java
 Builder builder = new ConcreteBuilder();
 Director director = new Director(builder);
@@ -49,6 +50,7 @@ Product product = builder.getProduct();
 System.out.println(product);
 ````
 Output:
+
 ```` console
 Product [partOne=One, partTwo=Two]
 ````
@@ -62,11 +64,13 @@ Product [partOne=One, partTwo=Two]
 [Factory Method Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/factoryMethod)
 
 Example:
+
 ```` java
 Creator creator = new ConcreteCreator();
 creator.anOperation();
 ````
 Output:
+
 ```` console
 ConcreteProduct operation 1.
 ConcreteProduct operation 2.
@@ -83,6 +87,7 @@ ConcreteProduct operation 2.
 [Singleton Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/singleton)
 
 Example:
+
 ````java
 System.out.print("Get Instance 1st time: ");
 System.out.println(Singleton.getInstance());
@@ -125,6 +130,7 @@ Data: Same Data
 [Adapter Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/adapter)
 
 Example:
+
 ````java
 	public static void main(String[] args) {
 		System.out.println("AdapterComposition");
@@ -148,6 +154,7 @@ Example:
 ````
 
 Output:
+
 ````console
 AdapterComposition
 Adaptee.specificRequest() implementation called from Target (Interface)
@@ -168,6 +175,7 @@ Adaptee.specificRequest() implementation called from Target (Interface)
 [Bridge Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/bridge)
 
 Example:
+
 ````java
 Abstraction abstraction = new Abstraction(1);
 abstraction.operation();
@@ -180,6 +188,7 @@ abstraction3.operation();
 ````
 
 Output:
+
 ````console
 primitive Operation One - Concrete Implementation A.
 primitive Operation Two - Concrete Implementation A.
@@ -206,12 +215,14 @@ primitive Operation Two - Concrete Implementation B.
 [FlyWeight Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/flyweight)
 
 Example:
+
 ```` java
 flyweight = FlyweightFactory.getFlyweight("Hello");
 flyweight.operation("World!.");
 flyweight.operation("Darkness my old friend.");
 ````
 Output:
+
 ````console
 Hello World!.
 Hello Darkness my old friend.
