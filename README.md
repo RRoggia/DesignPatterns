@@ -319,8 +319,7 @@ AnotherConcreteObserver state is : Invalid
 1. The `Strategy` interface receives the whole `Context` and the `ConcreteStrategy` it's responsible for getting the required data. It creates a coupling between the `Context` and `ConcreteStrategy`.
 2. The `Strategy` interface receives only the arguments it requires. It might be necessary to have a generic interface, meaning that eventually a `ConcreteStrategy` might not use all the arguments.
 
-
-[]()
+[Strategy Implementation](https://github.com/RRoggia/design-patterns/tree/master/src/com/rroggia/strategy)
 
 Changing Implementation Example: 
 
