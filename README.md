@@ -207,9 +207,9 @@ primitive Operation Two - Concrete Implementation B.
 
 ### Facade
 * Provides an unique and simplified interface to several resources of a subsystem. 
-* It can provide an default behavior, making it better to most of the clients that can use the default implementation. For more specific scenarios, client application can still access the subsystem classes.
-* Decouples client application and subsystems classes. Because, the facade is the entry point of the subsystem, it isolates the client code from the subsystem classes. Loose couple and less classes to the client application to know about, making it easier to use.
-* The `Facade` delegates the work to the subsystem classes. It might be required some mapping between the `Facade `interface and the subsystems classes. 
+* `Facade` can provide an default behavior, making it better to most of the clients that can use the default implementation. For more specific scenarios, client application can still access the `SubsystemClass`.
+* Decouples client application from the and `SubsystemClass`. Because, the `Facade` is the entry point of the subsystem, it isolates the client code from the `SubsystemClass`. Loose couple and less classes to the client application to know about, making it easier to use.
+* The `Facade` delegates the work to the `SubsystemClass`. It might be required some mapping between the `Facade `interface and the `SubsystemClass`. 
 
 [Facade Implementation](https://github.com/RRoggia/DesignPatterns/tree/master/src/com/rroggia/facade)
 
