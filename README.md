@@ -216,14 +216,14 @@ primitive Operation Two - Concrete Implementation B.
 Example: 
 
 ````java
-	new Facade().doSomething(4);
+new Facade().doSomething(4);
 ````
 
 Output:
 
 ````console
-	SubsystemClassA value is 8
-	Subsystem class b value is 4.0
+SubsystemClassA value is 8
+Subsystem class b value is 4.0
 ````
 
 ### FlyWeight
